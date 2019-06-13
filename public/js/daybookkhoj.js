@@ -26,7 +26,7 @@ $("#daybookkhoj").on('click',function(e)
 		    if(data.results.length>0)
 {
 	$('.daybookdiv').html('');
-	 $('.daybookdiv').append(`<button onclick="exportpdf('daybooktable')" class="btn btn-primary">Export PDF</button><div class="table-responsive" style="max-height:350px !important; overflow-y:scroll;"><table style="font-family:preeti;" id="daybooktable" class=" ml-3 table table-bordered table-hover daybooktable">
+	 $('.daybookdiv').append(`<button onclick="exportpdf('daybooktable')" class="btn btn-primary">Export PDF</button><div class="table-responsive" style="max-height:350px !important; overflow-y:scroll;"><table id="daybooktable" class=" ml-3 table table-bordered table-hover daybooktable">
                         <tr>
                             <th> मिति</th>
                             <th> प्रकार</th>

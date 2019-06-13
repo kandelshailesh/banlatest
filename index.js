@@ -2113,8 +2113,13 @@ app.post('/daybookkhoj',(req,res) =>
         for(i=0;i<result.length;i++)
         {
             result[i].amount=getnepali(result[i].amount);
+            if(result[i].narration===null)
+            {
+                result[i].narration='';
+            }
         
         }
+
         res.json({'results':result});
     })
     
